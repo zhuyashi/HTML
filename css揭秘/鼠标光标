@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        input{
+             cursor: not-allowed;//按钮被禁用
+             /*cursor: none;//按钮隐藏鼠标光标*/
+             border:100px solid transparent;
+             box-shadow:0 0 0 1px red inset,0 .1em .2em -0.5em blue;
+             background-clip:padding-box;
+        }
+    </style>
+</head>
+<body>
+<div style="width: 200px;height: 100px;background-color: #4d4d4d;" id="editdiv" contenteditable="true" ></div>
+<input type="button" value="获取数据" onclick="onck()"/>
+<script type="text/javascript">
+    function onck(){
+        var text=document.getElementById("editdiv").innerText;
+        alert(text);
+    }
+</script>
+</body>
+</html>
